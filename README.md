@@ -61,6 +61,46 @@ If we want select all columns but limit return we use
 
 ```SELECT * FROM people LIMIT 10```
 
+## SELECT DISTINCT
+
+When we want to select all the unique values from a column we use DISTINCT
+
+```
+SELECT DISTINCT language from films;
+```
+
+## COUNT
+
+We use COUNT to count number of rows 
+
+```SELECT COUNT(*) FROM people;
+```
+
+will return number od rows in people table;
+
+## Count non-missing values
+
+if we want to count the number of non-missing values in a particular column, we can call ```COUNT()``` on just that column
+
+```
+SELECT COUNT(adress) FROM people;
+```
+
+will count number of adresses in people table
+
+if use DISTINCT
+
+```
+SELECT COUNT(DISTINCT adress) FROM people;
+```
+
+it will count just unique adresses
+
+
+
+
+
+
 
 
 
