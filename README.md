@@ -41,4 +41,26 @@ In SQL keywords are not case-sensitive, but it is good practice to write keyword
 
 Semicolon ```;``` at the end of query isn't necessary but it is also good practice to put it at the end of our query.
 
+## Selecting multiple columns.
+
+To do that we just separate the column names with commas.
+
+```SELECT name, surname FROM people;```
+
+## Selecting all columns.
+
+```
+SELECT * FROM people;
+```
+
+will select everything from a table.
+
+## Limit number of columns
+
+If we want select all columns but limit return we use
+
+```SELECT * FROM people LIMIT 10```
+
+
+
 
