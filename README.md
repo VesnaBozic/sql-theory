@@ -2,7 +2,7 @@
 
 ## Summary
 
-- [What is SQL ?](#what-is-sql)
+- [What is SQL?](#what-is-sql)
 - [What is relational datebase?](#what-is-relational-datebase)
 - [What is a table?](#what-is-a-table)
 - [What is a row?](#what-is-a-row)
@@ -17,7 +17,7 @@
 - [COUNT](#count)
 - [Count non-missing values](#count-non-missing-values)
 
-## What is SQL ?
+## What is SQL?
 
 SQL stands for Structured Query Language and it is a language for interacting with data stored in something called a relational database.
 
