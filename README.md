@@ -141,6 +141,30 @@ SELECT names, surname FROM people WHERE name = 'Vesna';
 
 will return us rows with just name and surname where name is Vesna
 
+## WHERE AND
+
+We use for multiple conditions.
+
+```
+SELECT * FROM people WHERE name= 'Vesna' AND surname = 'Bozic';
+```
+
+## WHERE AND OR
+
+we ```OR``` use when some condition, but not all needs to be met.
+
+```
+SELECT name FROM people WHERE birthdate = 1996 OR birthdate = 1987;
+```
+
+We can combine ```AND``` and ```OR``` but we need to enclose individual clauses in parentheses
+
+```
+SELECT name
+FROM people
+WHERE (birthdate = 1994 OR birthdate = 1995)
+AND (name = 'Vesna' OR name = 'Marko');
+```
 
 
 
