@@ -21,7 +21,8 @@
 - [BETWEEN](#between)
 - [WHERE IN](#where-in)
 - [NULL](#null)
-- [LIKE AND NOT LIKE](#like-and-not-like)
+- [LIKE](#like)
+- [NOT LIKE](#not-like)
 
 ## What is SQL?
 
@@ -281,6 +282,19 @@ WHERE surname LIKE '%ic'
 Result : Bozic, Jankovic
 
 Notice how the number of characters before “ic” does not matter with this wildcard
+
+## NOT LIKE
+
+```NOT LIKE``` behaves  essentially returning the opposite of what the LIKE operator would.
+
+SELECT *
+FROM people
+WHERE surname NOT LIKE '%ic'
+```
+
+will return every person that doesn't have at the end of surname "ic"
+
+
 
 
 
