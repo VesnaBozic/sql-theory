@@ -73,7 +73,8 @@ SELECT DISTINCT language from films;
 
 We use COUNT to count number of rows 
 
-```SELECT COUNT(*) FROM people;
+```
+SELECT COUNT(*) FROM people;
 ```
 
 will return number od rows in people table;
