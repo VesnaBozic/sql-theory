@@ -23,6 +23,7 @@
 - [NULL](#null)
 - [LIKE](#like)
 - [NOT LIKE](#not-like)
+- [Aggregate functions](#aggregate-functions)
 
 ## What is SQL?
 
@@ -287,12 +288,54 @@ Notice how the number of characters before “ic” does not matter with this wi
 
 ```NOT LIKE``` behaves  essentially returning the opposite of what the LIKE operator would.
 
+```
 SELECT *
 FROM people
 WHERE surname NOT LIKE '%ic'
 ```
 
 will return every person that doesn't have at the end of surname "ic"
+
+
+## Aggregate functions
+
+We use aggregate functions to perform some calculation on the data in a database.
+
+#### AVG (average value of column)
+```
+SELECT AVG(salary)
+FROM people;
+```
+
+will give us average value from salary column of the people table.
+
+#### MAX (maximum value of column)
+
+```
+SELECT MAX(salary)
+FROM people;
+```
+return us maximum salary of the people table
+
+#### MIN (minimum value of column)
+
+```
+SELECT MIN(salary)
+FROM people;
+```
+return us minimum salary of the people table
+
+#### SUM (sum of all columns)
+
+```
+SELECT SUM(salary)
+FROM people;
+```
+
+
+
+
+
 
 
 
