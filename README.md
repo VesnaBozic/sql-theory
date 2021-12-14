@@ -128,12 +128,18 @@ Comparison operators that we can use:
 - ```>=``` greater than or equal to
 
 ```
-SELECT name FROM people WHERE name = 'Vesna';
+SELECT * FROM people WHERE name = 'Vesna';
 ```
 
 will return us all rows where persons name is Vesna.
 
 ```WHERE``` always comes after ```FROM```
+
+```
+SELECT names, surname FROM people WHERE name = 'Vesna';
+```
+
+will return us rows with just name and surname where name is Vesna
 
 
 
