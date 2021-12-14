@@ -24,6 +24,7 @@
 - [LIKE](#like)
 - [NOT LIKE](#not-like)
 - [Aggregate functions](#aggregate-functions)
+- [Arithmetic](#arithmetic)
 
 ## What is SQL?
 
@@ -332,6 +333,35 @@ SELECT SUM(salary)
 FROM people;
 ```
 
+## Arithmetic
+
+We can perform basic arithmetic with symbols like ```+```, ```-```, ```*```, and ```/```
+
+```
+SELECT (4*3)
+```
+
+RESULT : 12
+
+The following query 
+
+```
+SELECT (4/3)
+```
+
+RESULT : 1
+
+SQL assumes that if you divide an integer by an integer, you want to get an integer back. 
+
+IfWE want more precision when dividing, WE can add decimal places to your numbers. 
+
+```
+SELECT (4.0 / 3.0) AS result;
+```
+
+RESULET : 1.333
+
+## AS
 
 
 
