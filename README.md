@@ -1,5 +1,21 @@
 # SQL BASIC
 
+## Summary
+
+- [What is SQL ?](#what-is-sql)
+- [What is relational datebase?](#what-is-relational-datebase)
+- [What is a table?](#what-is-a-table)
+- [What is a row?](#what-is-a-row)
+- [What is a column?](#what-is-a-cloumn)
+- [What is a query?](#what-is-a-query)
+- [SELECT](#select)
+- [KEYWORDS](#keywords)
+- [Selecting multiple columns.](#selecting-multiple-columns)
+- [Selecting all columns.](#selecting-all-columns)
+- [Limit number of columns](#limit-number-of-columns)
+- [SELECT DISTINCT](#select-distinct)
+- [COUNT](#count)
+- [Count non-missing values](#count-non-missing-values)
 
 ## What is SQL ?
 
@@ -17,11 +33,11 @@ A table is just a set of rows and columns and it represents one type of entity.
 
 Each row is one record. For example if we have table representing movies one row will represent one movie.
 
-## What is column?
+## What is a column?
 
-Column is single attribute for all rows in the table.
+A Column is single attribute for all rows in the table.
 
-## What us a query?
+## What is a query?
 
 A query is a request for a data from datebase table ( or combination of tables)
 
