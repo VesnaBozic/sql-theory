@@ -19,7 +19,7 @@
 - [WHERE](#where)
 - [WHERE AND OR](#where-and-or)
 - [BETWEEN](#between)
-- [WHERE IN)(#where-in)
+- [WHERE IN](#where-in)
 - [NULL](#null)
 - [LIKE AND NOT LIKE](#like-and-not-like)
 
