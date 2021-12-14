@@ -17,6 +17,7 @@
 - [COUNT](#count)
 - [Count non-missing values](#count-non-missing-values)
 - [WHERE](#where)
+- [WHERE AND OR](#where-and-or)
 
 ## What is SQL?
 
@@ -165,6 +166,31 @@ FROM people
 WHERE (birthdate = 1994 OR birthdate = 1995)
 AND (name = 'Vesna' OR name = 'Marko');
 ```
+
+## BETWEEN
+
+Shorthand for filtering values within a specified range.
+
+```
+SELECT *
+FROM people
+WHERE birthdate >= 1994
+AND birthdate <= 2000;
+```
+
+with between we can write like :
+
+```
+SELECT name
+FROM people
+WHERE birthdate
+BETWEEN 1994 AND 2000;
+```
+
+BETWEEN is inclusive, meaning the beginning and end values are included in the results.
+
+
+
 
 
 
