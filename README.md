@@ -18,6 +18,10 @@
 - [Count non-missing values](#count-non-missing-values)
 - [WHERE](#where)
 - [WHERE AND OR](#where-and-or)
+- [BETWEEN](#between)
+- [WHERE IN)(#where-in)
+- [NULL](#null)
+- [LIKE AND NOT LIKE](#like-and-not-like)
 
 ## What is SQL?
 
@@ -188,6 +192,101 @@ BETWEEN 1994 AND 2000;
 ```
 
 BETWEEN is inclusive, meaning the beginning and end values are included in the results.
+
+## WHERE IN
+
+IN operator allows us to specify multiple values in a WHERE clause, making it easier and quicker to specify multiple OR conditions
+
+QUERY :
+```
+SELECT name
+FROM people
+WHERE age = 2
+OR age = 4
+OR age = 6
+OR age = 8
+OR age = 10;
+```
+
+we can write 
+
+```
+SELECT name
+FROM people
+WHERE age IN (2, 4, 6, 8, 10);
+```
+
+## NULL
+
+NULL represents a missing or unknown value. 
+
+We can check is something has null value using expresion ```IS NULL```
+```
+SELECT *
+FROM people
+WHERE birthdate IS NULL;
+```
+
+## LIKE AND NOT LIKE
+
+The SQL ```LIKE``` and ```NOT LIKE``` operators are used to find matches between a string and a given pattern.
+
+The SQL ```LIKE``` is a logical operator that checks whether or not a string contains a specified pattern
+
+```
+SELECT name
+FROM peole
+WHERE surname LIKE 'Bozic'
+```
+
+Equals (=) is a comparison operator that operates on numbers and strings. When comparing strings, the equals operator compares whole strings. In comparison, LIKE compares character by character through the use of wildcards.
+
+WILDCARDS : ```(%)``` AND ```(_)```
+
+Wildcard characters are used to substitute for one or more characters in a pattern string:
+
+- The percent ```(%)``` wildcard substitutes for one or more characters in a string.
+- The underscore ```(_)``` wildcard substitutes for exactly one character in a string.
+
+#### The Underscore (_) Wildcard
+
+Imagine we want to retrieve, from the table ```people```, the first names of the persons with the following conditions:
+
+The FirstName must start with the letter “T”,
+The third letter of FirstName must be “m”, and
+The second letter FirstName can be anything.
+
+```
+SELECT FirstName
+FROM people
+WHERE FirstName LIKE 'T_m'
+```
+
+result Tom, Tim
+
+The second letter of the name can be anything. Our SQL query is ignoring that letter and looking for the pattern we have specified.
+
+#### The Percent (%) Wildcard
+
+The percent (%) wildcard is used to substitute for multiple characters.
+
+Imagine we want to find all the people whose last name ends in “son”. To achieve this, we can simply write the following query:
+
+```
+SELECT *
+FROM people
+WHERE surname LIKE '%ic'
+```
+
+Result : Bozic, Jankovic
+
+Notice how the number of characters before “ic” does not matter with this wildcard
+
+
+
+
+
+
 
 
 
