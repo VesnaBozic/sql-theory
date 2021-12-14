@@ -16,6 +16,7 @@
 - [SELECT DISTINCT](#select-distinct)
 - [COUNT](#count)
 - [Count non-missing values](#count-non-missing-values)
+- [WHERE](#where)
 
 ## What is SQL?
 
@@ -112,6 +113,27 @@ SELECT COUNT(DISTINCT adress) FROM people;
 ```
 
 it will count just unique adresses
+
+## WHERE
+
+Allows us to filter based on both text and numeric values in a table.
+
+Comparison operators that we can use:
+
+- ```=``` equal
+- ```<>``` not equal
+- ```<``` less than
+- ```>``` greater than
+- ```<=``` less than or equal to
+- ```>=``` greater than or equal to
+
+```
+SELECT name FROM people WHERE name = 'Vesna';
+```
+
+will return us all rows where persons name is Vesna.
+
+```WHERE``` always comes after ```FROM```
 
 
 
