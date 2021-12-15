@@ -25,6 +25,7 @@
 - [NOT LIKE](#not-like)
 - [Aggregate functions](#aggregate-functions)
 - [Arithmetic](#arithmetic)
+- [ALIASING](#aliasing)
 
 ## What is SQL?
 
