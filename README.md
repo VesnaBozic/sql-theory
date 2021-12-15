@@ -26,6 +26,7 @@
 - [Aggregate functions](#aggregate-functions)
 - [Arithmetic](#arithmetic)
 - [ALIASING](#aliasing)
+- [ORDER BY](#order-by)
 
 ## What is SQL?
 
@@ -386,6 +387,19 @@ FROM films;
 ```ORDER BY``` is used to sort results in ascending or descending order according to the values of one or more columns.
 
 By default ```ORDER BY``` will sort in ascending order. If you want to sort the results in descending order, you can use the ```DESC``` keyword.
+
+```
+SELECT name
+FROM people
+ORDER BY name
+```
+and query for descending
+
+```
+SELECT name
+FROM people
+ORDER BY name DESC
+```
 
 
 
