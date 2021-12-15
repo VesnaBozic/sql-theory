@@ -401,6 +401,20 @@ FROM people
 ORDER BY name DESC
 ```
 
+#### SORTING MULTIPLE COLUMNS
+
+```
+SELECT birthdate, name
+FROM people
+ORDER BY birthdate, name;
+```
+
+wil first sort birthdates from oldest to newest and then names in alphabetical order.
+
+
+
+
+
 
 
 
