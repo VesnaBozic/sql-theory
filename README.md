@@ -412,6 +412,20 @@ ORDER BY birthdate, name;
 wil first sort birthdates from oldest to newest and then names in alphabetical order.
 
 
+## GROUP BY
+
+We use for aggregating results.
+
+For example, we might want to count the number of male and female in people table. In that case we want to group all the males together and count them, and group all the females together and count them. In SQL, ```GROUP BY``` allows us to group a result by one or more columns.
+
+Query would be: 
+
+```
+SELECT sex, count(*)
+FROM people
+GROUP BY sex;
+````
+
 
 
 
