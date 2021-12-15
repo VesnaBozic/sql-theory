@@ -438,6 +438,9 @@ GROUP BY sex
 ORDER BY count DESC;
 ```
 
+```ORDER BY``` always come after ```GROUP BY```
+
+
 
 
 
