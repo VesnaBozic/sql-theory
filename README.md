@@ -361,7 +361,27 @@ SELECT (4.0 / 3.0) AS result;
 
 RESULET : 1.333
 
-## AS
+## ALIASING
+
+```
+SELECT MAX(budget), MAX(duration)
+FROM films;
+```
+
+Now we have two columns named max, which isn't very useful.
+
+To avoid situations like this, SQL allows you to do something called aliasing. Aliasing simply means you assign a temporary name to something.
+
+To alias we use ```AS``` keyword.
+
+```
+SELECT MAX(budget) AS max_budget,
+       MAX(duration) AS max_duration
+FROM films;
+```
+
+
+
 
 
 
