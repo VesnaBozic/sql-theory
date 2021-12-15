@@ -381,6 +381,18 @@ SELECT MAX(budget) AS max_budget,
 FROM films;
 ```
 
+## ORDER BY
+
+```ORDER BY``` is used to sort results in ascending or descending order according to the values of one or more columns.
+
+By default ```ORDER BY``` will sort in ascending order. If you want to sort the results in descending order, you can use the ```DESC``` keyword.
+
+
+
+
+
+
+
 
 
 
