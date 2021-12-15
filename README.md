@@ -27,6 +27,7 @@
 - [Arithmetic](#arithmetic)
 - [ALIASING](#aliasing)
 - [ORDER BY](#order-by)
+- [GROUP BY](#group-by)
 
 ## What is SQL?
 
