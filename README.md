@@ -427,6 +427,17 @@ FROM people
 GROUP BY sex;
 ````
 
+```GROUP BY``` always comes after ```FROM```
+
+We can use it with ```ORDER BY```
+
+```
+SELECT sex, count(*)
+FROM people
+GROUP BY sex
+ORDER BY count DESC;
+```
+
 
 
 
