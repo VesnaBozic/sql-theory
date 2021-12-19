@@ -29,6 +29,7 @@
 - [ORDER BY](#order-by)
 - [GROUP BY](#group-by)
 - [HAVING](#having)
+- [INNER JOIN](#inner-join)
 
 ## What is SQL?
 
