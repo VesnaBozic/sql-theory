@@ -28,6 +28,7 @@
 - [ALIASING](#aliasing)
 - [ORDER BY](#order-by)
 - [GROUP BY](#group-by)
+- [HAVING](#having)
 
 ## What is SQL?
 
