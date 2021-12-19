@@ -457,6 +457,13 @@ HAVING COUNT(birthyear) > 1990;
 This will show us all people born after 1990
 
 
+## INNER JOIN
+
+The ```INNER JOIN``` keyword selects records that have matching values in both tables.
+
+
+
+
 
 
 
