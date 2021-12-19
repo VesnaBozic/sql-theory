@@ -441,6 +441,24 @@ ORDER BY count DESC;
 ```ORDER BY``` always come after ```GROUP BY```
 
 
+## HAVING
+
+If we want to filter based on the result of an aggregate function, we can't use ```WHERE```
+
+We use ```HAVING``` instead
+
+```
+SELECT birthyear
+FROM people
+GROUP BY birthyear
+HAVING COUNT(birthyear) > 1990;
+```
+This will show us all people born after 1990
+
+
+
+
+
 
 
 
