@@ -33,7 +33,7 @@
 - [USING](#using)
 - [SELF JOIN](#self-join)
 - [CASE WHEN AND THEN](#case-when-and-then)
-- [LEFT JOIN)(#left-join)
+- [LEFT JOIN](#left-join)
 
 ## What is SQL?
 
@@ -467,7 +467,7 @@ This will show us all people born after 1990
 The ```INNER JOIN``` keyword selects records that have matching values in both tables.
 It returns only those rows that have a match in both joined tables.
 
-![git](/inner-join.jpg)
+![inner_join](/inner-join.jpg)
 
 
 ```
@@ -477,7 +477,7 @@ INNER JOIN table2
 ON table1.column_name = table2.column_name;
 ```
 
-![git](/inner-join2.jpg)
+![inner-join](/inner-join2.jpg)
 
 ## USING
 
@@ -509,7 +509,7 @@ FROM employees
 
 The ```LEFT JOIN``` returns all rows from the left table and the matching rows from the right table. If no matching rows are found in the right table, ```NULL``` are used.
 
-![git](/left-join.jpg)
+![left-join](/left_join.jpg)
 
 
 
