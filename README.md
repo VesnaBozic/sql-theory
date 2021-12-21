@@ -31,6 +31,7 @@
 - [HAVING](#having)
 - [INNER JOIN](#inner-join)
 - [USING](#using)
+- [SELF JOIN](#self-join)
 
 ## What is SQL?
 
