@@ -30,6 +30,7 @@
 - [GROUP BY](#group-by)
 - [HAVING](#having)
 - [INNER JOIN](#inner-join)
+- [USING](#using)
 
 ## What is SQL?
 
@@ -474,6 +475,12 @@ ON table1.column_name = table2.column_name;
 ```
 
 ![git](/inner-join2.jpg)
+
+## USING
+
+When the key field we'd like to join on is the same name in both tables, we can use a ```USING``` clause instead of the ON clause.
+
+Since id is the same name in both the left table and the right table we can specify USING instead of ON here. Note that the parentheses are required around the key field with USING. 
 
 
 
