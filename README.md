@@ -512,6 +512,11 @@ The ```LEFT JOIN``` returns all rows from the left table and the matching rows f
 ![left-join](/left_join.jpg)
 
 
+```
+SELECT * FROM table1
+LEFT JOIN table2
+ON table1.name = table2.name;
+```
 
 
 
