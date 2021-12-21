@@ -34,6 +34,7 @@
 - [SELF JOIN](#self-join)
 - [CASE WHEN AND THEN](#case-when-and-then)
 - [LEFT JOIN](#left-join)
+- [RIGHT JOIN](#right-join)
 
 ## What is SQL?
 
@@ -517,6 +518,24 @@ SELECT * FROM table1
 LEFT JOIN table2
 ON table1.name = table2.name;
 ```
+
+## RIGHT JOIN
+
+A RIGHT JOIN performs a join starting with the right table.
+
+Then, any matching records from the left table will be included.
+
+Rows without a match will have NULL column values.
+
+![right-join](/right_join.jpg)
+
+```
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+```
+
 
 
 
