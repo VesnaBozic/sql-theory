@@ -35,6 +35,7 @@
 - [CASE WHEN AND THEN](#case-when-and-then)
 - [LEFT JOIN](#left-join)
 - [RIGHT JOIN](#right-join)
+- [FULL JOIN](#full-join)
 
 ## What is SQL?
 
@@ -536,7 +537,16 @@ RIGHT JOIN table2
 ON table1.column_name = table2.column_name;
 ```
 
+## FULL JOIN
 
+A FULL JOIN returns all records from both tables.
+
+This includes records that do not match.
+
+Rows without a match will have NULL column values.
+
+
+![full-join](/full-join.jpg)
 
 
 
