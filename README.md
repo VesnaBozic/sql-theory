@@ -481,7 +481,31 @@ ON table1.column_name = table2.column_name;
 
 When the key field we'd like to join on is the same name in both tables, we can use a ```USING``` clause instead of the ON clause.
 
-Since id is the same name in both the left table and the right table we can specify USING instead of ON here. Note that the parentheses are required around the key field with USING. 
+Since id is the same name in both the left table and the right table we can specify USING instead of ON here. Note that the parentheses are required around the key field with USING.
+
+## SELF JOIN
+
+A self join is a regular join, but the table is joined with itself. Self join links a table to itself. 
+
+To use a self join, the table must contain a column (call it X) that acts as the primary key and a different column (call it Y) that stores values that can be matched up with the values in Column X.
+
+## CASE WHEN AND THEN
+
+You can use CASE with ```WHEN```, ```THEN```, ```ELSE```, and ```END``` to define a new grouping field.
+
+```
+SELECT name, salary
+CASE
+    WHEN salary > 3000 THEN 'high'
+    WHEN salary > 1500 THEN 'medium'
+    ELSE 'low' END
+FROM employees
+
+```
+
+
+
+
 
 
 
