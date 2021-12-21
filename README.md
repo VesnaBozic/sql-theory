@@ -527,7 +527,7 @@ Then, any matching records from the left table will be included.
 
 Rows without a match will have NULL column values.
 
-![right-join](/right_join.jpg)
+![right-join](/right-join.jpg)
 
 ```
 SELECT column_name(s)
