@@ -36,6 +36,7 @@
 - [LEFT JOIN](#left-join)
 - [RIGHT JOIN](#right-join)
 - [FULL JOIN](#full-join)
+- [CROSS JOIN](#cross-join)
 
 ## What is SQL?
 
@@ -556,6 +557,12 @@ ON table1.column_name = table2.column_name
 WHERE condition;
 ```
 
+## CROSS JOIN
+
+CROSS JOIN is used to combine all possibilities of the two or more tables and returns the result that contains every row from all contributing tables. The CROSS JOIN is also known as CARTESIAN JOIN, which provides the Cartesian product of all associated tables. The Cartesian product can be explained as all rows present in the first table multiplied by all rows present in the second table. It is similar to the Inner Join, where the join condition is not available with this clause.
+
+
+![cross-join](/cross-join.jpg)
 
 
 
