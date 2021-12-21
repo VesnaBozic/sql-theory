@@ -564,6 +564,11 @@ CROSS JOIN is used to combine all possibilities of the two or more tables and re
 
 ![cross-join](/cross-join.jpg)
 
+```
+SELECT *
+FROM table1
+CROSS JOIN table2
+```
 
 
 
