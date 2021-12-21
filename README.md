@@ -32,6 +32,8 @@
 - [INNER JOIN](#inner-join)
 - [USING](#using)
 - [SELF JOIN](#self-join)
+- [CASE WHEN AND THEN](#case-when-and-then)
+- [LEFT JOIN)(#left-join)
 
 ## What is SQL?
 
@@ -502,6 +504,14 @@ CASE
 FROM employees
 
 ```
+
+## LEFT JOIN
+
+The ```LEFT JOIN``` returns all rows from the left table and the matching rows from the right table. If no matching rows are found in the right table, ```NULL``` are used.
+
+![git](/left-join.jpg)
+
+
 
 
 
