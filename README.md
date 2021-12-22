@@ -39,6 +39,7 @@
 - [CROSS JOIN](#cross-join)
 - [UNION](#union)
 - [UNION ALL](#union-all)
+- [interselect](#interselect)
 
 ## What is SQL?
 
@@ -602,6 +603,23 @@ SELECT column_name(s) FROM table1
 UNION ALL
 SELECT column_name(s) FROM table2;
 ```
+
+## INTERSELECT
+
+The INTERSECT clause in SQL is used to combine two SELECT statements but the dataset returned by the INTERSECT statement will be the intersection of the data-sets of the two SELECT statements. In simple words, the INTERSECT statement will return only those rows which will be common to both of the SELECT statements.
+
+![interselect](/assets/interselect.jpg)
+
+```
+SELECT column1
+FROM table1 
+
+INTERSECT
+
+SELECT column1 
+FROM table2
+```
+
 
 
 
