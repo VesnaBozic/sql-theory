@@ -472,7 +472,7 @@ This will show us all people born after 1990
 The ```INNER JOIN``` keyword selects records that have matching values in both tables.
 It returns only those rows that have a match in both joined tables.
 
-![inner_join](/inner-join.jpg)
+![inner_join](/assets/inner-join.jpg)
 
 
 ```
@@ -482,7 +482,7 @@ INNER JOIN table2
 ON table1.column_name = table2.column_name;
 ```
 
-![inner-join](/inner-join2.jpg)
+![inner-join](/assets/inner-join2.jpg)
 
 ## USING
 
@@ -514,7 +514,7 @@ FROM employees
 
 The ```LEFT JOIN``` returns all rows from the left table and the matching rows from the right table. If no matching rows are found in the right table, ```NULL``` are used.
 
-![left-join](/left_join.jpg)
+![left-join](/assets/left_join.jpg)
 
 
 ```
@@ -531,7 +531,7 @@ Then, any matching records from the left table will be included.
 
 Rows without a match will have NULL column values.
 
-![right-join](/right-join.jpg)
+![right-join](/assets/right-join.jpg)
 
 ```
 SELECT column_name(s)
@@ -549,7 +549,7 @@ This includes records that do not match.
 Rows without a match will have NULL column values.
 
 
-![full-join](/full-join.jpg)
+![full-join](/assets/full-join.jpg)
 
 ```
 SELECT column_name(s)
@@ -564,7 +564,7 @@ WHERE condition;
 CROSS JOIN is used to combine all possibilities of the two or more tables and returns the result that contains every row from all contributing tables. The CROSS JOIN is also known as CARTESIAN JOIN, which provides the Cartesian product of all associated tables. The Cartesian product can be explained as all rows present in the first table multiplied by all rows present in the second table. It is similar to the Inner Join, where the join condition is not available with this clause.
 
 
-![cross-join](/cross-join.jpg)
+![cross-join](/assets/cross-join.jpg)
 
 ```
 SELECT *
@@ -582,7 +582,7 @@ The ```UNION``` operator is used to combine the result-set of two or more ```SEL
 
 >The columns in every SELECT statement must also be in the same order
 
-![union](/union.jpg)
+![union](/assets/union.jpg)
 
 
 ```
@@ -595,7 +595,7 @@ SELECT column_name(s) FROM table2;
 
 Does same as ```UNION```  but return duplicate values
 
-![union-all](/union-all.jpg)
+![union-all](/assets/union-all.jpg)
 
 ```
 SELECT column_name(s) FROM table1
