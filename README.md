@@ -38,6 +38,7 @@
 - [FULL JOIN](#full-join)
 - [CROSS JOIN](#cross-join)
 - [UNION](#union)
+- [UNION ALL](#union-all)
 
 ## What is SQL?
 
@@ -581,13 +582,26 @@ The ```UNION``` operator is used to combine the result-set of two or more ```SEL
 
 >The columns in every SELECT statement must also be in the same order
 
+![union](/union.jpg)
+
+
 ```
 SELECT column_name(s) FROM table1
 UNION
 SELECT column_name(s) FROM table2;
 ```
 
+## UNION ALL
 
+Does same as ```UNION```  but return duplicate values
+
+![union-all](/union-all.jpg)
+
+```
+SELECT column_name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
+```
 
 
 
