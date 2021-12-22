@@ -40,6 +40,7 @@
 - [UNION](#union)
 - [UNION ALL](#union-all)
 - [INTERSECT](#intersect)
+- [EXCEPT](#except)
 
 ## What is SQL?
 
