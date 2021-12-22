@@ -41,7 +41,7 @@
 - [UNION ALL](#union-all)
 - [INTERSECT](#intersect)
 - [EXCEPT](#except)
-- [SUBQUERIES]#(subqueries)
+- [SUBQUERIES](#subqueries)
 
 
 ## What is SQL?
