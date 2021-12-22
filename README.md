@@ -41,6 +41,8 @@
 - [UNION ALL](#union-all)
 - [INTERSECT](#intersect)
 - [EXCEPT](#except)
+- [SUBQUERIES]#(subqueries)
+
 
 ## What is SQL?
 
@@ -620,6 +622,54 @@ INTERSECT
 SELECT column1 
 FROM table2
 ```
+
+## EXCEPT
+
+The SQL ```EXCEPT``` clause/operator is used to combine two ```SELECT``` statements and returns rows from the first ```SELECT``` statement that are not returned by the second ```SELECT``` statement. This means ```EXCEPT``` returns only rows, which are not available in the second ```SELECT``` statement.
+
+```
+SELECT name
+FROM cities
+
+EXCEPT
+
+SELECT capital
+FROM countries
+```
+
+## SUBQUERIES
+
+A subquery is a SQL query nested inside a larger query.
+
+A subquery may occur in :
+- A SELECT clause
+
+- A FROM clause
+- 
+- A WHERE clause
+
+A subquery is also called an inner query or inner select, while the statement containing a subquery is also called an outer query or outer select.
+
+The inner query executes first before its parent query so that the results of an inner query can be passed to the outer query.
+
+```
+SELECT a.studentid, a.name, b.total_marks
+FROM student a, marks b
+WHERE a.studentid = b.studentid AND b.total_marks >
+(SELECT total_marks
+FROM marks
+WHERE studentid =  'V002');
+```
+
+A subquery must be enclosed in parentheses
+
+
+
+
+
+
+
+
 
 
 
